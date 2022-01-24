@@ -1,21 +1,20 @@
 import React from 'react'
 import { storiesOf, addParameters } from '@storybook/react'
 import Button from './button'
-import { ButtonSize, ButtonType } from './buttonTypes'
 import { DocsPage, DocsContainer } from '@storybook/addon-docs'
 
 const buttonWithSize = () => (
   <>
-    <Button size={ButtonSize.Large}> large button </Button>
-    <Button size={ButtonSize.Small}> small button </Button>
+    <Button size='lg'> large button </Button>
+    <Button size='sm'> small button </Button>
   </>
 )
 
 const buttonWithType = () => (
   <>
-    <Button btnType={ButtonType.Primary}> primary button </Button>
-    <Button btnType={ButtonType.Danger}> danger button </Button>
-    <Button btnType={ButtonType.Link} href="https://google.com"> link button </Button>
+    <Button btnType='primary'> primary button </Button>
+    <Button btnType='danger'> danger button </Button>
+    <Button btnType='link' href="https://google.com"> link button </Button>
   </>
 )
 

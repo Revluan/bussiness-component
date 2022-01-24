@@ -12,8 +12,8 @@ function App() {
         <h2>hello world</h2>
         <h3>hello world</h3>
         <Button onClick={e => { e.preventDefault(); alert('123') }}>hello</Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>hello</Button>
-        <Button btnType={ButtonType.Danger}>hello</Button>
+        <Button btnType='primary' size='lg'>hello</Button>
+        <Button btnType='danger'>hello</Button>
       </header>
     </div>
   );

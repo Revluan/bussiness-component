@@ -1,7 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import Button from "./button";
-import { ButtonType } from "./buttonTypes";
 
 const defaultProps = {
   onClick: jest.fn()
@@ -15,7 +14,7 @@ const disabledProps = {
 describe('test Button component', () => {
   it('should render the correct default button', () => {
     const wrapper = render(<Button {...defaultProps}>Nice</Button>)
-    const element = wrapper.getByText('Nice')
+    const element = wrapper.getByText("Nice")
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('BUTTON')
     expect(element).toHaveClass('btn btn-default')
@@ -23,7 +22,7 @@ describe('test Button component', () => {
     expect(defaultProps.onClick).toHaveBeenCalled()
   })
   it('should render the link button when btnType equals link and href is provided', () => {
-    const wrapper = render(<Button btnType={ButtonType.Link} href="http://www.baidu.com">Link</Button>)
+    const wrapper = render(<Button btnType="link" href="http://www.baidu.com">Link</Button>)
     const element = wrapper.getByText('Link')
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('A')
