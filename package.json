@@ -22,10 +22,16 @@
     "dist"
   ],
   "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/use-subscription": "^1.0.0",
+    "antd": "^4.18.5",
     "classnames": "^2.3.1",
     "cross-env": "^7.0.3",
     "husky": "^7.0.4",
+    "moment": "^2.29.1",
     "react-docgen-typescript-loader": "^3.7.2",
+    "rxjs": "6.5.5",
+    "use-subscription": "^1.5.1",
     "web-vitals": "^2.1.4"
   },
   "peerDependencies": {
